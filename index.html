@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-Service Property Maintenance & Turnover Specialists in DFW. Make-ready units, residential repairs, flooring, plumbing, electrical, painting & more. Fast turnaround for property managers.">
+    <title>OnPoint Pros - Property Maintenance & Turnover Experts | DFW</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17829418143"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17829418143');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e40af;
+        }
+
+        .logo-text span {
+            color: #f59e0b;
+        }
+
+        .header-cta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .phone-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1e40af;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 5% 80px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23ffffff05" width="100" height="100"/><circle fill="%23ffffff08" cx="25" cy="25" r="2"/><circle fill="%23ffffff08" cx="75" cy="75" r="2"/><circle fill="%23ffffff08" cx="75" cy="25" r="1"/><circle fill="%23ffffff08" cx="25" cy="75" r="1"/></svg>');
+            background-size: 100px 100px;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .usp-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #f59e0b;
+        }
+
+        .hero-subheadline {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .hero-benefits {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .hero-benefits li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            color: #e2e8f0;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            background: #10b981;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .services-grid-hero {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .service-card-hero {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .service-card-hero:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .service-card-hero .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card-hero h3 {
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .rating-badge {
+            position: absolute;
+            bottom: -20px;
+            left: 20px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stars {
+            color: #f59e0b;
+            font-size: 1.2rem;
+        }
+
+        .rating-text {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 80px 5%;
+            background: #fff;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: #64748b;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border-color: #2563eb;
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: #1e293b;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Lead Form Section */
+        .lead-form-section {
+            padding: 80px 5%;
+            background: #f8fafc;
+        }
+
+        .lead-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .lead-form-container h2 {
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 10px;
+        }
+
+        .lead-form-container p {
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        .lead-form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #94a3b8;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.1rem;
+        }
+
+        .trust-text {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .trust-text svg {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        /* Property Manager Section */
+        .pm-section {
+            padding: 80px 5%;
+            background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+            color: white;
+        }
+
+        .pm-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .pm-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .pm-content p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .pm-benefits {
+            list-style: none;
+        }
+
+        .pm-benefits li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .pm-benefit-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .pm-benefit-text strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .pm-benefit-text span {
+            opacity: 0.85;
+            font-size: 0.95rem;
+        }
+
+        .pm-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .stat-card .number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #fbbf24;
+            display: block;
+        }
+
+        .stat-card .label {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Trust Section */
+        .trust-section {
+            padding: 80px 5%;
+            background: #fff;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .testimonial-stars {
+            color: #f59e0b;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            color: #475569;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author-avatar {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .author-info strong {
+            display: block;
+            color: #1e293b;
+        }
+
+        .author-info span {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .trust-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 30px 0;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .trust-logo {
+            padding: 10px 16px;
+            background: #f8fafc;
+            border-radius: 8px;
+            color: #64748b;
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            padding: 80px 5%;
+            background: #f8fafc;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            text-align: center;
+            position: relative;
+            border: 2px solid transparent;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.featured {
+            border-color: #f59e0b;
+        }
+
+        .pricing-card.featured::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.4rem;
+            color: #1e293b;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2563eb;
+            margin: 20px 0;
+        }
+
+        .pricing-card .price span {
+            font-size: 1rem;
+            color: #64748b;
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 10px 0;
+            color: #475569;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-features .check {
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            padding: 80px 5%;
+            background: #1e293b;
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .final-cta p {
+            color: #94a3b8;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .final-cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .final-phone {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 20px;
+        }
+
+        .final-phone a {
+            color: #fbbf24;
+            text-decoration: none;
+        }
+
+        .final-tagline {
+            color: #64748b;
+            font-size: 1rem;
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 15px 5%;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+            z-index: 999;
+        }
+
+        .sticky-cta-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sticky-text {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .sticky-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 30px 5% 100px;
+            background: #0f172a;
+            color: #64748b;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 4%;
+            }
+
+            .logo-img {
+                height: 65px !important;
+                width: auto !important;
+            }
+
+            .logo-text {
+                font-size: 1.1rem;
+            }
+
+            .phone-number {
+                display: none;
+            }
+
+            .hero {
+                padding: 100px 5% 60px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subheadline {
+                font-size: 1rem;
+            }
+
+            .services-grid-hero {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .service-card-hero {
+                padding: 15px;
+            }
+
+            .service-card-hero .icon {
+                font-size: 2rem;
+            }
+
+            .service-card-hero h3 {
+                font-size: 0.8rem;
+            }
+
+            .pm-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .pm-stats {
+                order: -1;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .lead-form {
+                padding: 25px;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .pm-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .final-cta h2 {
+                font-size: 1.8rem;
+            }
+
+            .final-phone {
+                font-size: 1.5rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+
+            .sticky-text {
+                display: none;
+            }
+
+            .sticky-buttons {
+                width: 100%;
+            }
+
+            .sticky-buttons a {
+                flex: 1;
+                text-align: center;
+            }
+
+            .trust-logos {
+                gap: 10px;
+                padding: 20px 0;
+            }
+            
+            .trust-logo {
+                padding: 8px 12px;
+                font-size: 0.75rem;
+                border-radius: 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 12px 20px;
+                font-size: 0.95rem;
+            }
+
+            .stat-card .number {
+                font-size: 2.2rem;
+            }
+
+            .pricing-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="../drywall-landing-page/images/onpointLogo.png" alt="OnPoint Pros Logo" class="logo-img">
+        </div>
+        <div class="header-cta">
+            <a href="tel:+14692381719" class="phone-number">📞 (469) 238-1719</a>
+            <a href="tel:+14692381719" class="btn-primary">Get Free Quote</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="usp-badge">🏗️ Full-Service Property Maintenance</div>
+                <h1>Your One-Stop Shop for <span>Property Turnovers & Maintenance</span></h1>
+                <p class="hero-subheadline">Fast, reliable service for property managers, landlords, and homeowners across DFW. From make-ready units to complete renovations – we handle it all.</p>
+                
+                <ul class="hero-benefits">
+                    <li><span class="check-icon">✓</span> Fast Turnaround for Make-Ready Units</li>
+                    <li><span class="check-icon">✓</span> Single Point of Contact for All Trades</li>
+                    <li><span class="check-icon">✓</span> Licensed, Insured & Guaranteed Work</li>
+                    <li><span class="check-icon">✓</span> Serving Residential & Multi-Family</li>
+                </ul>
+
+                <div class="hero-cta">
+                    <a href="tel:+14692381719" class="btn-primary">📞 Call for Free Estimate</a>
+                    <a href="#quote-form" class="btn-secondary">Request Quote Online</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="services-grid-hero">
+                    <div class="service-card-hero">
+                        <div class="icon">🔧</div>
+                        <h3>Plumbing</h3>
+                    </div>
+                    <div class="service-card-hero">
+                        <div class="icon">⚡</div>
+                        <h3>Electrical</h3>
+                    </div>
+                    <div class="service-card-hero">
+                        <div class="icon">🪵</div>
+                        <h3>Flooring</h3>
+                    </div>
+                    <div class="service-card-hero">
+                        <div class="icon">🧱</div>
+                        <h3>Tile Work</h3>
+                    </div>
+                    <div class="service-card-hero">
+                        <div class="icon">🎨</div>
+                        <h3>Painting</h3>
+                    </div>
+                    <div class="service-card-hero">
+                        <div class="icon">🏠</div>
+                        <h3>Drywall</h3>
+                    </div>
+                    <div class="service-card-hero">
+                        <div class="icon">🚪</div>
+                        <h3>Doors & Trim</h3>
+                    </div>
+                    <div class="service-card-hero">
+                        <div class="icon">✨</div>
+                        <h3>& More!</h3>
+                    </div>
+                </div>
+                <div class="rating-badge">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5.0 Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Complete Property Maintenance Services</h2>
+                <p>One team, all the skills – we eliminate the hassle of coordinating multiple contractors</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Interior & Exterior Painting</h3>
+                    <p>Professional painting for units, homes, and commercial spaces. Clean lines, quality materials, fast turnaround.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🪵</div>
+                    <h3>Flooring Installation</h3>
+                    <p>LVP, laminate, hardwood, and tile installation. We remove old flooring and install new – ready for move-in.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🧱</div>
+                    <h3>Tile & Backsplash</h3>
+                    <p>Kitchen backsplashes, bathroom tile, shower surrounds, and floor tile. Expert installation with clean grout lines.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Plumbing Repairs</h3>
+                    <p>Faucet replacement, toilet repairs, garbage disposals, water heater issues, and leak fixes.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Electrical Work</h3>
+                    <p>Outlet installation, light fixtures, ceiling fans, switches, and minor electrical repairs.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Drywall Repair & Install</h3>
+                    <p>Hole repair, water damage restoration, texture matching, and full drywall installation.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚪</div>
+                    <h3>Doors, Trim & Carpentry</h3>
+                    <p>Door installation, trim work, baseboards, crown molding, and custom carpentry solutions.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>General Repairs</h3>
+                    <p>Cabinet repairs, hardware replacement, caulking, weatherstripping, and all those little fixes that add up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Manager Section -->
+    <section class="pm-section">
+        <div class="pm-container">
+            <div class="pm-content">
+                <h2>Built for Property Managers & Landlords</h2>
+                <p>Managing turnovers is stressful enough. We simplify the process with a single point of contact for all your maintenance and make-ready needs.</p>
+                
+                <ul class="pm-benefits">
+                    <li>
+                        <div class="pm-benefit-icon">⚡</div>
+                        <div class="pm-benefit-text">
+                            <strong>Fast Turnaround Times</strong>
+                            <span>Get units rent-ready faster. Most make-ready projects completed in 3-5 days.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pm-benefit-icon">📋</div>
+                        <div class="pm-benefit-text">
+                            <strong>One Invoice, All Trades</strong>
+                            <span>No more juggling multiple contractors. One team handles painting, flooring, plumbing, electrical & more.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pm-benefit-icon">💰</div>
+                        <div class="pm-benefit-text">
+                            <strong>Competitive Volume Pricing</strong>
+                            <span>Property management companies receive preferred pricing for ongoing work.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pm-benefit-icon">📱</div>
+                        <div class="pm-benefit-text">
+                            <strong>Clear Communication</strong>
+                            <span>Photo updates, transparent timelines, and responsive service you can count on.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pm-stats">
+                <div class="stat-card">
+                    <span class="number">500+</span>
+                    <span class="label">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">3-5</span>
+                    <span class="label">Day Avg. Turnaround</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">100%</span>
+                    <span class="label">Satisfaction Rate</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">5.0</span>
+                    <span class="label">Google Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section class="lead-form-section" id="quote-form">
+        <div class="lead-form-container">
+            <h2>Get Your Free Project Quote</h2>
+            <p>Tell us about your project and we'll get back to you within 2 hours!</p>
+            
+            <form class="lead-form" id="lead-capture-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number *" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Email Address *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="city" id="city" placeholder="City / Location *" required>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <select name="property_type" id="property_type" required>
+                        <option value="" disabled selected>Property Type *</option>
+                        <option value="residential">Residential Home</option>
+                        <option value="apartment">Apartment / Multi-Family</option>
+                        <option value="condo">Condo / Townhome</option>
+                        <option value="commercial">Commercial Property</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <select name="service_type" id="service_type" required>
+                        <option value="" disabled selected>What do you need? *</option>
+                        <option value="make_ready">Full Make-Ready / Turnover</option>
+                        <option value="painting">Painting (Interior/Exterior)</option>
+                        <option value="flooring">Flooring Installation</option>
+                        <option value="tile">Tile / Backsplash</option>
+                        <option value="plumbing">Plumbing Repairs</option>
+                        <option value="electrical">Electrical Work</option>
+                        <option value="drywall">Drywall Repair/Installation</option>
+                        <option value="multiple">Multiple Services</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <textarea name="details" id="details" placeholder="Tell us more about your project (optional)"></textarea>
+                </div>
+                <input type="hidden" name="source" value="Property Services Landing Page">
+                <button type="submit" class="btn-primary form-submit">Get My Free Quote →</button>
+                <p class="trust-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    No obligation. Fast response. Quality guaranteed.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Trusted by Property Managers & Homeowners</h2>
+                <p>See why DFW property professionals choose OnPoint Pros</p>
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"OnPoint Pros has been a game-changer for our property management company. They handle all our turnovers – painting, flooring, repairs – everything. Fast, reliable, and fair pricing."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <strong>Jennifer M.</strong>
+                            <span>Property Manager, Frisco</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I used to have to call 3-4 different contractors for a turnover. Now I just call OnPoint and they handle it all. Saved me so much time and headache!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <strong>Robert K.</strong>
+                            <span>Landlord, McKinney</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Quality work, great communication, and they actually show up when they say they will. Hard to find these days. Highly recommend for any property maintenance needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SC</div>
+                        <div class="author-info">
+                            <strong>Sarah C.</strong>
+                            <span>Homeowner, Allen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-logos">
+                <div class="trust-logo">🏢 500+ Projects Completed</div>
+                <div class="trust-logo">⭐ 5-Star Google Rating</div>
+                <div class="trust-logo">✅ Fully Licensed & Insured</div>
+                <div class="trust-logo">🛡️ Work Guaranteed</div>
+                <div class="trust-logo">🏠 Residential & Commercial</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Transparent Pricing</h2>
+                <p>No surprises, no hidden fees – just honest pricing for quality work</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Small Repairs</h3>
+                    <div class="price">$99<span>+</span></div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Minor drywall repairs</li>
+                        <li><span class="check">✓</span> Faucet/fixture replacement</li>
+                        <li><span class="check">✓</span> Light fixture installation</li>
+                        <li><span class="check">✓</span> Door hardware & locks</li>
+                        <li><span class="check">✓</span> Caulking & touch-ups</li>
+                    </ul>
+                    <a href="tel:+14692381719" class="btn-secondary" style="width: 100%;">Call for Quote</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Make-Ready Package</h3>
+                    <div class="price">Custom</div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Full interior painting</li>
+                        <li><span class="check">✓</span> Flooring installation</li>
+                        <li><span class="check">✓</span> All repairs included</li>
+                        <li><span class="check">✓</span> Plumbing & electrical fixes</li>
+                        <li><span class="check">✓</span> Deep clean ready</li>
+                        <li><span class="check">✓</span> 3-5 day turnaround</li>
+                    </ul>
+                    <a href="#quote-form" class="btn-primary" style="width: 100%;">Get Free Quote</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Larger Projects</h3>
+                    <div class="price">Custom</div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Bathroom remodels</li>
+                        <li><span class="check">✓</span> Kitchen updates</li>
+                        <li><span class="check">✓</span> Full flooring replacement</li>
+                        <li><span class="check">✓</span> Extensive drywall work</li>
+                        <li><span class="check">✓</span> Complete unit renovations</li>
+                    </ul>
+                    <a href="tel:+14692381719" class="btn-secondary" style="width: 100%;">Call to Discuss</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Get your free quote today – no obligation, fast response.</p>
+        
+        <div class="final-phone">
+            <a href="tel:+14692381719">📞 (469) 238-1719</a>
+        </div>
+
+        <div class="final-cta-buttons">
+            <a href="tel:+14692381719" class="btn-primary">Call Now for Free Quote</a>
+            <a href="#quote-form" class="btn-secondary">Request Quote Online</a>
+        </div>
+
+        <p class="final-tagline">Your Trusted Partner for Property Maintenance in DFW</p>
+    </section>
+
+    <!-- Sticky CTA (Mobile) -->
+    <div class="sticky-cta">
+        <div class="sticky-cta-content">
+            <span class="sticky-text">Get Your Free Quote Today!</span>
+            <div class="sticky-buttons">
+                <a href="tel:+14692381719" class="btn-primary">📞 Call Now</a>
+                <a href="#quote-form" class="btn-secondary">Get Quote</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 OnPoint Pros. All Rights Reserved.</p>
+        <p style="margin-top: 8px;">Serving Allen, McKinney, Frisco, Prosper, Plano, Dallas & Surrounding DFW Areas</p>
+        <p style="margin-top: 10px;">📧 <a href="mailto:team@onpointprostx.com" style="color: #94a3b8; text-decoration: none;">team@onpointprostx.com</a></p>
+        <p style="margin-top: 5px;">📞 <a href="tel:+14692381719" style="color: #94a3b8; text-decoration: none;">(469) 238-1719</a></p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Show sticky CTA on scroll (mobile)
+        window.addEventListener('scroll', function() {
+            const stickyCta = document.querySelector('.sticky-cta');
+            if (window.innerWidth <= 768) {
+                if (window.scrollY > 500) {
+                    stickyCta.style.display = 'block';
+                } else {
+                    stickyCta.style.display = 'none';
+                }
+            }
+        });
+
+        // GHL Form Submission
+        document.getElementById('lead-capture-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                city: document.getElementById('city').value,
+                property_type: document.getElementById('property_type').value,
+                service_type: document.getElementById('service_type').value,
+                details: document.getElementById('details').value,
+                source: 'Property Services Landing Page'
+            };
+
+            fetch('https://services.leadconnectorhq.com/hooks/UEW8ayn3dNsZG78pPsZw/webhook-trigger/b21b6628-2916-4ced-9a87-4c7582fed85b', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                // Show success message
+                this.innerHTML = '<div style="text-align: center; padding: 40px 20px;"><h3 style="color: #10b981; margin-bottom: 10px;">✓ Thank You!</h3><p style="color: #64748b;">We\'ll contact you within 2 hours with your quote.</p></div>';
+            })
+            .catch(error => {
+                // Still show success (webhook may not return proper CORS headers)
+                this.innerHTML = '<div style="text-align: center; padding: 40px 20px;"><h3 style="color: #10b981; margin-bottom: 10px;">✓ Thank You!</h3><p style="color: #64748b;">We\'ll contact you within 2 hours with your quote.</p></div>';
+            });
+        });
+    </script>
+
+</body>
+</html>

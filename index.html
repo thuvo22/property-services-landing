@@ -643,22 +643,12 @@
                 body: JSON.stringify(formData)
             })
             .then(response => {
-                this.innerHTML = `
-                    <div class="text-center py-10">
-                        <div class="text-6xl mb-4">✓</div>
-                        <h3 class="text-2xl font-bold text-green-600 mb-2">Thank You!</h3>
-                        <p class="text-lg text-gray-600">We'll call you within 24 hours with your quote.</p>
-                    </div>
-                `;
+                // Redirect to thank you page for conversion tracking
+                window.location.href = 'thank-you.html';
             })
             .catch(error => {
-                this.innerHTML = `
-                    <div class="text-center py-10">
-                        <div class="text-6xl mb-4">✓</div>
-                        <h3 class="text-2xl font-bold text-green-600 mb-2">Thank You!</h3>
-                        <p class="text-lg text-gray-600">We'll call you within 24 hours with your quote.</p>
-                    </div>
-                `;
+                // Still redirect even if there's a network issue (form data may have been sent)
+                window.location.href = 'thank-you.html';
             });
         });
 

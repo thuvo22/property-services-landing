@@ -628,6 +628,24 @@
         </div>
     </footer>
 
+    <!-- Google Ads Conversion Function -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17919168051/uDq3CI2ugfAbELOcw-BC',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
     <!-- FORM SUBMISSION SCRIPT -->
     <script>
         document.getElementById('lead-capture-form').addEventListener('submit', function(e) {
@@ -655,8 +673,8 @@
                 body: JSON.stringify(formData)
             })
             .then(response => {
-                // Redirect to thank you page for conversion tracking
-                window.location.href = 'thank-you.html';
+                // Fire conversion and redirect to thank you page
+                gtag_report_conversion('thank-you.html');
             })
             .catch(error => {
                 // Still redirect even if there's a network issue (form data may have been sent)
